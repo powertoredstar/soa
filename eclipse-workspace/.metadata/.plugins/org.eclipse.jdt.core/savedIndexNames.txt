@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+D:\学校作业\SOA与Web技术\zyh\soa\eclipse-workspace\.metadata\.plugins\org.eclipse.jdt.core
+1373859837.index
+884561779.index
+1865797976.index
