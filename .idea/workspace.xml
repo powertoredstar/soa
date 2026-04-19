@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c7bc853-0ba9-4b0f-ac85-c8113a7bfbdf" name="Changes" comment="chore(project): 初始化项目配置文件和作业文档&#10;&#10;- 添加 Eclipse 工作空间配置文件 (.classpath, .project, .settings)&#10;- 配置 Java 21 环境和编译器设置&#10;- 添加 IDEA 项目配置文件 (.gitignore, material_theme_project_new.xml)&#10;- 创建基本的 Java 主类 Homework2Main 输出学号&#10;- 添加作业说明文档和相关图片资源&#10;- 配置版本控制系统忽略规则" />
+    <list default="true" id="1c7bc853-0ba9-4b0f-ac85-c8113a7bfbdf" name="Changes" comment="feat(homework3): 实现Java字节流作业功能&#10;&#10;- 创建Homework3类使用OutputStream多态引用写入int和学号到文件&#10;- 添加FileOutputStream和BufferedOutputStream流式输出实现&#10;- 创建Homework3StreamChain类演示多级流包装级联操作&#10;- 生成homework3_output.txt文本输出文件和homework3_binary.dat二进制文件&#10;- 添加作业说明文档和IDEA项目配置文件&#10;- 更新工作空间XML配置和版本控制映射设置">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eclipse-workspace/3123004163/bin/homework3/Homework3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eclipse-workspace/3123004163/bin/homework3/Homework3StreamChain.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eclipse-workspace/3123004163/homework3_binary.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eclipse-workspace/3123004163/homework3_output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eclipse-workspace/3123004163/src/homework3/Homework3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eclipse-workspace/3123004163/src/homework3/Homework3StreamChain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/第3次作业截图.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/作业3.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/第3次作业.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,28 +25,28 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="3C7sRAQpAbus2x0sGxfoegEUQGH" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/学校作业/SOA与Web技术/zyh/soa",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "MTFeaturesSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/学校作业/SOA与Web技术/zyh/soa&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MTFeaturesSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -52,6 +64,9 @@
       <option name="presentableId" value="Default" />
       <updated>1775747931363</updated>
       <workItem from="1775747932430" duration="1643000" />
+      <workItem from="1775749594880" duration="397000" />
+      <workItem from="1776569075837" duration="45000" />
+      <workItem from="1776571943530" duration="303000" />
     </task>
     <task id="LOCAL-00001" summary="chore(project): 初始化项目配置文件和作业文档&#10;&#10;- 添加 Eclipse 工作空间配置文件 (.classpath, .project, .settings)&#10;- 配置 Java 21 环境和编译器设置&#10;- 添加 IDEA 项目配置文件 (.gitignore, material_theme_project_new.xml)&#10;- 创建基本的 Java 主类 Homework2Main 输出学号&#10;- 添加作业说明文档和相关图片资源&#10;- 配置版本控制系统忽略规则">
       <option name="closed" value="true" />
@@ -61,7 +76,31 @@
       <option name="project" value="LOCAL" />
       <updated>1775748332266</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="chore(project): 初始化项目配置文件和作业文档&#10;&#10;- 添加 Eclipse 工作空间配置文件 (.classpath, .project, .settings)&#10;- 配置 Java 21 环境和编译器设置&#10;- 添加 IDEA 项目配置文件 (.gitignore, material_theme_project_new.xml)&#10;- 创建基本的 Java 主类 Homework2Main 输出学号&#10;- 添加作业说明文档和相关图片资源&#10;- 配置版本控制系统忽略规则">
+      <option name="closed" value="true" />
+      <created>1775749839942</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1775749839942</updated>
+    </task>
+    <task id="LOCAL-00003" summary="chore(project): 初始化项目配置文件和作业文档&#10;&#10;- 添加 Eclipse 工作空间配置文件 (.classpath, .project, .settings)&#10;- 配置 Java 21 环境和编译器设置&#10;- 添加 IDEA 项目配置文件 (.gitignore, material_theme_project_new.xml)&#10;- 创建基本的 Java 主类 Homework2Main 输出学号&#10;- 添加作业说明文档和相关图片资源&#10;- 配置版本控制系统忽略规则">
+      <option name="closed" value="true" />
+      <created>1775749904220</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1775749904220</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat(homework3): 实现Java字节流作业功能&#10;&#10;- 创建Homework3类使用OutputStream多态引用写入int和学号到文件&#10;- 添加FileOutputStream和BufferedOutputStream流式输出实现&#10;- 创建Homework3StreamChain类演示多级流包装级联操作&#10;- 生成homework3_output.txt文本输出文件和homework3_binary.dat二进制文件&#10;- 添加作业说明文档和IDEA项目配置文件&#10;- 更新工作空间XML配置和版本控制映射设置">
+      <option name="closed" value="true" />
+      <created>1776572213349</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1776572213349</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,6 +119,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="chore(project): 初始化项目配置文件和作业文档&#10;&#10;- 添加 Eclipse 工作空间配置文件 (.classpath, .project, .settings)&#10;- 配置 Java 21 环境和编译器设置&#10;- 添加 IDEA 项目配置文件 (.gitignore, material_theme_project_new.xml)&#10;- 创建基本的 Java 主类 Homework2Main 输出学号&#10;- 添加作业说明文档和相关图片资源&#10;- 配置版本控制系统忽略规则" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore(project): 初始化项目配置文件和作业文档&#10;&#10;- 添加 Eclipse 工作空间配置文件 (.classpath, .project, .settings)&#10;- 配置 Java 21 环境和编译器设置&#10;- 添加 IDEA 项目配置文件 (.gitignore, material_theme_project_new.xml)&#10;- 创建基本的 Java 主类 Homework2Main 输出学号&#10;- 添加作业说明文档和相关图片资源&#10;- 配置版本控制系统忽略规则" />
+    <MESSAGE value="feat(homework3): 实现Java字节流作业功能&#10;&#10;- 创建Homework3类使用OutputStream多态引用写入int和学号到文件&#10;- 添加FileOutputStream和BufferedOutputStream流式输出实现&#10;- 创建Homework3StreamChain类演示多级流包装级联操作&#10;- 生成homework3_output.txt文本输出文件和homework3_binary.dat二进制文件&#10;- 添加作业说明文档和IDEA项目配置文件&#10;- 更新工作空间XML配置和版本控制映射设置" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(homework3): 实现Java字节流作业功能&#10;&#10;- 创建Homework3类使用OutputStream多态引用写入int和学号到文件&#10;- 添加FileOutputStream和BufferedOutputStream流式输出实现&#10;- 创建Homework3StreamChain类演示多级流包装级联操作&#10;- 生成homework3_output.txt文本输出文件和homework3_binary.dat二进制文件&#10;- 添加作业说明文档和IDEA项目配置文件&#10;- 更新工作空间XML配置和版本控制映射设置" />
   </component>
 </project>
