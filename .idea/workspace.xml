@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c7bc853-0ba9-4b0f-ac85-c8113a7bfbdf" name="Changes" comment="feat(server): 添加Python应答服务器实现&#10;&#10;- 创建echo_server.py实现基于socket的应答服务器&#10;- 支持telnet客户端连接显示学号信息3123004163&#10;- 实现用户输入处理和q/Q退出功能&#10;- 添加完善的异常处理和资源清理机制&#10;- 配置服务器监听端口12345和连接管理&#10;- 提供详细的使用说明文档和测试截图">
-      <change afterPath="$PROJECT_DIR$/image/第7次作业-Wireshark报文列表.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/第7次作业-服务器启动.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/第7次作业-浏览器访问.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pyworkspace/http_header_server.py" afterDir="false" />
+    <list default="true" id="1c7bc853-0ba9-4b0f-ac85-c8113a7bfbdf" name="Changes" comment="feat(server): 添加Python HTTP请求头打印服务器实现&#10;&#10;- 创建http_header_server.py实现基于socket的HTTP服务器&#10;- 支持动态端口选择和自动写入http_server.port文件&#10;- 实现HTTP请求头解析和控制台打印功能&#10;- 同时写入http_request.log日志文件&#10;- 返回HTML响应避免浏览器挂起&#10;- 添加信号处理和优雅关闭机制&#10;- 配置最大请求头大小限制和超时处理&#10;- 提供详细的使用说明文档和测试截图&#10;- 支持Wireshark抓包分析和端口过滤功能">
+      <change afterPath="$PROJECT_DIR$/image/第6次作业-服务器启动.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/第6次作业-服务日志.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/第6次作业-查看所有用户.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/第6次作业-用户1登录.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/第6次作业-用户2登录.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/第6次作业-私聊发送.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/第6次作业-私聊接收.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/第6次作业-退出登录.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +72,9 @@
       <workItem from="1776571943530" duration="919000" />
       <workItem from="1776955902057" duration="93000" />
       <workItem from="1777554862435" duration="1381000" />
-      <workItem from="1778916077027" duration="1366000" />
+      <workItem from="1778916077027" duration="1474000" />
+      <workItem from="1778921332195" duration="801000" />
+      <workItem from="1778928213261" duration="722000" />
     </task>
     <task id="LOCAL-00001" summary="chore(project): 初始化项目配置文件和作业文档&#10;&#10;- 添加 Eclipse 工作空间配置文件 (.classpath, .project, .settings)&#10;- 配置 Java 21 环境和编译器设置&#10;- 添加 IDEA 项目配置文件 (.gitignore, material_theme_project_new.xml)&#10;- 创建基本的 Java 主类 Homework2Main 输出学号&#10;- 添加作业说明文档和相关图片资源&#10;- 配置版本控制系统忽略规则">
       <option name="closed" value="true" />
@@ -126,7 +132,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777556193999</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat(server): 添加Python HTTP请求头打印服务器实现&#10;&#10;- 创建http_header_server.py实现基于socket的HTTP服务器&#10;- 支持动态端口选择和自动写入http_server.port文件&#10;- 实现HTTP请求头解析和控制台打印功能&#10;- 同时写入http_request.log日志文件&#10;- 返回HTML响应避免浏览器挂起&#10;- 添加信号处理和优雅关闭机制&#10;- 配置最大请求头大小限制和超时处理&#10;- 提供详细的使用说明文档和测试截图&#10;- 支持Wireshark抓包分析和端口过滤功能">
+      <option name="closed" value="true" />
+      <created>1778917552598</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1778917552598</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +162,7 @@
     <MESSAGE value="feat(homework3): 实现Java字节流作业功能&#10;&#10;- 创建Homework3类使用OutputStream多态引用写入int和学号到文件&#10;- 添加FileOutputStream和BufferedOutputStream流式输出实现&#10;- 创建Homework3StreamChain类演示多级流包装级联操作&#10;- 生成homework3_output.txt文本输出文件和homework3_binary.dat二进制文件&#10;- 添加作业说明文档和IDEA项目配置文件&#10;- 更新工作空间XML配置和版本控制映射设置" />
     <MESSAGE value="feat(homework4): 添加输入流读取和简单计算器功能&#10;&#10;- 实现读取第三次作业生成的 homework3_output.txt 文件功能&#10;- 使用 FileInputStream → BufferedInputStream → InputStreamReader(UTF-8) → BufferedReader 流链&#10;- 解析文件首行为整数，次行为学号并输出到控制台&#10;- 实现基于 Scanner 的简单计算器，支持加减乘除四则运算&#10;- 使用 StringBuilder 拼接运算结果字符串&#10;- 提供菜单式交互界面，支持 q 键退出&#10;- 添加除零检查和输入验证功能&#10;- 包含完整的使用说明文档和运行截图" />
     <MESSAGE value="feat(server): 添加Python应答服务器实现&#10;&#10;- 创建echo_server.py实现基于socket的应答服务器&#10;- 支持telnet客户端连接显示学号信息3123004163&#10;- 实现用户输入处理和q/Q退出功能&#10;- 添加完善的异常处理和资源清理机制&#10;- 配置服务器监听端口12345和连接管理&#10;- 提供详细的使用说明文档和测试截图" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(server): 添加Python应答服务器实现&#10;&#10;- 创建echo_server.py实现基于socket的应答服务器&#10;- 支持telnet客户端连接显示学号信息3123004163&#10;- 实现用户输入处理和q/Q退出功能&#10;- 添加完善的异常处理和资源清理机制&#10;- 配置服务器监听端口12345和连接管理&#10;- 提供详细的使用说明文档和测试截图" />
+    <MESSAGE value="feat(server): 添加Python HTTP请求头打印服务器实现&#10;&#10;- 创建http_header_server.py实现基于socket的HTTP服务器&#10;- 支持动态端口选择和自动写入http_server.port文件&#10;- 实现HTTP请求头解析和控制台打印功能&#10;- 同时写入http_request.log日志文件&#10;- 返回HTML响应避免浏览器挂起&#10;- 添加信号处理和优雅关闭机制&#10;- 配置最大请求头大小限制和超时处理&#10;- 提供详细的使用说明文档和测试截图&#10;- 支持Wireshark抓包分析和端口过滤功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(server): 添加Python HTTP请求头打印服务器实现&#10;&#10;- 创建http_header_server.py实现基于socket的HTTP服务器&#10;- 支持动态端口选择和自动写入http_server.port文件&#10;- 实现HTTP请求头解析和控制台打印功能&#10;- 同时写入http_request.log日志文件&#10;- 返回HTML响应避免浏览器挂起&#10;- 添加信号处理和优雅关闭机制&#10;- 配置最大请求头大小限制和超时处理&#10;- 提供详细的使用说明文档和测试截图&#10;- 支持Wireshark抓包分析和端口过滤功能" />
   </component>
 </project>
