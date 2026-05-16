@@ -14,10 +14,10 @@
 	<section name="JavaElementSearchActions">
 	</section>
 	<section name="NewClassCreationWizard.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="250"/>
-		<item key="DIALOG_Y_ORIGIN" value="80"/>
-		<item key="DIALOG_WIDTH" value="603"/>
-		<item key="DIALOG_HEIGHT" value="643"/>
+		<item key="DIALOG_X_ORIGIN" value="465"/>
+		<item key="DIALOG_Y_ORIGIN" value="159"/>
+		<item key="DIALOG_WIDTH" value="567"/>
+		<item key="DIALOG_HEIGHT" value="621"/>
 		<item key="DIALOG_FONT_NAME" value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-21|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI"/>
 	</section>
 	<section name="NewPackageCreationWizard.dialogBounds">

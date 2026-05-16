@@ -4,16 +4,72 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c7bc853-0ba9-4b0f-ac85-c8113a7bfbdf" name="Changes" comment="feat(server): 添加Python HTTP请求头打印服务器实现&#10;&#10;- 创建http_header_server.py实现基于socket的HTTP服务器&#10;- 支持动态端口选择和自动写入http_server.port文件&#10;- 实现HTTP请求头解析和控制台打印功能&#10;- 同时写入http_request.log日志文件&#10;- 返回HTML响应避免浏览器挂起&#10;- 添加信号处理和优雅关闭机制&#10;- 配置最大请求头大小限制和超时处理&#10;- 提供详细的使用说明文档和测试截图&#10;- 支持Wireshark抓包分析和端口过滤功能">
-      <change afterPath="$PROJECT_DIR$/image/第6次作业-服务器启动.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/第6次作业-服务日志.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/第6次作业-查看所有用户.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/第6次作业-用户1登录.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/第6次作业-用户2登录.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/第6次作业-私聊发送.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/第6次作业-私聊接收.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/第6次作业-退出登录.png" afterDir="false" />
+    <list default="true" id="1c7bc853-0ba9-4b0f-ac85-c8113a7bfbdf" name="Changes" comment="feat(server): 添加Python多用户聊天服务器实现&#10;&#10;- 创建chat_server.py实现基于socket的多用户聊天服务器&#10;- 支持用户注册登录退出查找私聊等完整功能&#10;- 实现消息队列转发机制和线程池连接管理&#10;- 添加用户持久化存储和在线状态管理&#10;- 配置日志记录和异常处理机制&#10;- 提供详细的作业文档和测试截图">
+      <change afterPath="$PROJECT_DIR$/image/作业8-tomcat安装成功.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/作业8-创建动态网站项目.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/作业8-初始化第1个servlet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/作业8-访问初始化网页.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/作业8-访问学号.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.lock_info" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.lock_info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.log" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.buildship.core/gradle/versions.json" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.buildship.core/gradle/versions.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.logback/0.log" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.logback/0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Breadcrumbs" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Breadcrumbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/BrowserMetrics/BrowserMetrics-69D7C178-7F8.pma" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/BrowserMetrics/BrowserMetrics-69D7C2F0-2AF4.pma" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/BrowserMetrics/BrowserMetrics-69D7C2F2-4480.pma" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Crashpad/settings.dat" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Crashpad/settings.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/CrashpadMetrics-active.pma" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/CrashpadMetrics-active.pma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/CrashpadMetrics.pma" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/BrowsingTopicsState" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/BrowsingTopicsState" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Code Cache/js/index-dir/the-real-index" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Code Cache/js/index-dir/the-real-index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Extension State/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Extension State/LOG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Extension State/LOG.old" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Extension State/LOG.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Favicons" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Favicons" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/History" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/History" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Local Storage/leveldb/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Local Storage/leveldb/LOG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Local Storage/leveldb/LOG.old" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Local Storage/leveldb/LOG.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Login Data" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Login Data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Login Data For Account" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Login Data For Account" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Network/Network Persistent State" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Network/Network Persistent State" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Preferences" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Preferences" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Secure Preferences" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Secure Preferences" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Session Storage/000003.log" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Session Storage/000003.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Session Storage/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Session Storage/LOG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Session Storage/LOG.old" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Session Storage/LOG.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Site Characteristics Database/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Site Characteristics Database/LOG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Site Characteristics Database/LOG.old" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Site Characteristics Database/LOG.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Sync Data/LevelDB/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Sync Data/LevelDB/LOG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Sync Data/LevelDB/LOG.old" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Sync Data/LevelDB/LOG.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Web Data" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/Web Data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/favorites_diagnostic.log" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/favorites_diagnostic.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/shared_proto_db/000003.log" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/shared_proto_db/000003.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/shared_proto_db/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/shared_proto_db/LOG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/shared_proto_db/LOG.old" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/shared_proto_db/LOG.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/shared_proto_db/metadata/000003.log" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/shared_proto_db/metadata/000003.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/shared_proto_db/metadata/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/shared_proto_db/metadata/LOG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/shared_proto_db/metadata/LOG.old" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Default/shared_proto_db/metadata/LOG.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/EBWebViewMetrics/EBWebViewMetrics-69D7C2F0-2A18.pma" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/GrShaderCache/data_0" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/GrShaderCache/data_0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/GrShaderCache/data_1" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/GrShaderCache/data_1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/GrShaderCache/data_3" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/GrShaderCache/data_3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Last Version" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Last Version" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Local State" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Local State" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/SmartScreen/RemoteData/edgeSettings" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/SmartScreen/RemoteData/edgeSettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/SmartScreen/RemoteData/edgeSettings_2.0-0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Variations" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/Variations" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/component_crx_cache/metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.swt/EBWebView/component_crx_cache/metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.wst.jsdt.core/variablesAndContainers.dat" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/.plugins/org.eclipse.wst.jsdt.core/variablesAndContainers.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eclipse-workspace/.metadata/version.ini" beforeDir="false" afterPath="$PROJECT_DIR$/eclipse-workspace/.metadata/version.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyworkspace/chat_server.log" beforeDir="false" afterPath="$PROJECT_DIR$/pyworkspace/chat_server.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +130,8 @@
       <workItem from="1777554862435" duration="1381000" />
       <workItem from="1778916077027" duration="1474000" />
       <workItem from="1778921332195" duration="801000" />
-      <workItem from="1778928213261" duration="722000" />
+      <workItem from="1778928213261" duration="852000" />
+      <workItem from="1778940311842" duration="1634000" />
     </task>
     <task id="LOCAL-00001" summary="chore(project): 初始化项目配置文件和作业文档&#10;&#10;- 添加 Eclipse 工作空间配置文件 (.classpath, .project, .settings)&#10;- 配置 Java 21 环境和编译器设置&#10;- 添加 IDEA 项目配置文件 (.gitignore, material_theme_project_new.xml)&#10;- 创建基本的 Java 主类 Homework2Main 输出学号&#10;- 添加作业说明文档和相关图片资源&#10;- 配置版本控制系统忽略规则">
       <option name="closed" value="true" />
@@ -140,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778917552598</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feat(server): 添加Python多用户聊天服务器实现&#10;&#10;- 创建chat_server.py实现基于socket的多用户聊天服务器&#10;- 支持用户注册登录退出查找私聊等完整功能&#10;- 实现消息队列转发机制和线程池连接管理&#10;- 添加用户持久化存储和在线状态管理&#10;- 配置日志记录和异常处理机制&#10;- 提供详细的作业文档和测试截图">
+      <option name="closed" value="true" />
+      <created>1778929048123</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1778929048123</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +228,7 @@
     <MESSAGE value="feat(homework4): 添加输入流读取和简单计算器功能&#10;&#10;- 实现读取第三次作业生成的 homework3_output.txt 文件功能&#10;- 使用 FileInputStream → BufferedInputStream → InputStreamReader(UTF-8) → BufferedReader 流链&#10;- 解析文件首行为整数，次行为学号并输出到控制台&#10;- 实现基于 Scanner 的简单计算器，支持加减乘除四则运算&#10;- 使用 StringBuilder 拼接运算结果字符串&#10;- 提供菜单式交互界面，支持 q 键退出&#10;- 添加除零检查和输入验证功能&#10;- 包含完整的使用说明文档和运行截图" />
     <MESSAGE value="feat(server): 添加Python应答服务器实现&#10;&#10;- 创建echo_server.py实现基于socket的应答服务器&#10;- 支持telnet客户端连接显示学号信息3123004163&#10;- 实现用户输入处理和q/Q退出功能&#10;- 添加完善的异常处理和资源清理机制&#10;- 配置服务器监听端口12345和连接管理&#10;- 提供详细的使用说明文档和测试截图" />
     <MESSAGE value="feat(server): 添加Python HTTP请求头打印服务器实现&#10;&#10;- 创建http_header_server.py实现基于socket的HTTP服务器&#10;- 支持动态端口选择和自动写入http_server.port文件&#10;- 实现HTTP请求头解析和控制台打印功能&#10;- 同时写入http_request.log日志文件&#10;- 返回HTML响应避免浏览器挂起&#10;- 添加信号处理和优雅关闭机制&#10;- 配置最大请求头大小限制和超时处理&#10;- 提供详细的使用说明文档和测试截图&#10;- 支持Wireshark抓包分析和端口过滤功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(server): 添加Python HTTP请求头打印服务器实现&#10;&#10;- 创建http_header_server.py实现基于socket的HTTP服务器&#10;- 支持动态端口选择和自动写入http_server.port文件&#10;- 实现HTTP请求头解析和控制台打印功能&#10;- 同时写入http_request.log日志文件&#10;- 返回HTML响应避免浏览器挂起&#10;- 添加信号处理和优雅关闭机制&#10;- 配置最大请求头大小限制和超时处理&#10;- 提供详细的使用说明文档和测试截图&#10;- 支持Wireshark抓包分析和端口过滤功能" />
+    <MESSAGE value="feat(server): 添加Python多用户聊天服务器实现&#10;&#10;- 创建chat_server.py实现基于socket的多用户聊天服务器&#10;- 支持用户注册登录退出查找私聊等完整功能&#10;- 实现消息队列转发机制和线程池连接管理&#10;- 添加用户持久化存储和在线状态管理&#10;- 配置日志记录和异常处理机制&#10;- 提供详细的作业文档和测试截图" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(server): 添加Python多用户聊天服务器实现&#10;&#10;- 创建chat_server.py实现基于socket的多用户聊天服务器&#10;- 支持用户注册登录退出查找私聊等完整功能&#10;- 实现消息队列转发机制和线程池连接管理&#10;- 添加用户持久化存储和在线状态管理&#10;- 配置日志记录和异常处理机制&#10;- 提供详细的作业文档和测试截图" />
   </component>
 </project>
