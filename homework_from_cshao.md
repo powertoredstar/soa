@@ -238,6 +238,122 @@ while (true) {
 需要注意的是上面代码片段省略了异常处理，其它内容需要自己补充完整。
 
 
+## SOA第六次作业
+4/30/2026 
+1. 修改应答服务器为聊天服务器，可以实现多用户相互发送消息
+2. git管理所有内容，注意每次增加、修改重要内容（代码或文档）都要有一次提交。
+3. 按照课程设计要求撰写设计实现文档，使用md格式保存信息，文件名为“作业6.md”
+4. 修改前面作业中出现的错误或不足之处。
+
+
+编写聊天服务器，要求如下：
+1. 需要有自己的人个信息，比如 学号信息
+1. 服务器可以提供至少以下几个功能
+	1. 支持新用户的注册
+	2. 支持用户登录功能
+	3. 支持查找用户功能
+	4. 支持向某一个用户发送消息功能
+	5. 支持退出功能
+3. 使用telnet 作为客户端与服务器通信，模拟多个用户相互通信.
+	1. windows启动telnet ，打开cmd窗口 运行telnet
+
+编写提示（参考）：
+1. 创建为每个客户提供服务的类，实现Runnable接口, 代码片段如下
+```
+class ClientService implements Runnable
+{
+	// 这里保存对应的客户socket
+	private Socket client
+	public ClientService(Socket client)
+	{
+		this.client = client;
+	}
+	@Override
+	public void run() {
+		// 这里是实现与指定客户通信的代码
+	}
+}
+``` 
+2. 修改服务器代码，将单线程的服务代码修改为多线程处理方式,代码片段如下
+```
+while (true) {
+	Socket client = server.accept();
+		new Thread(new ClientService(client))).start(); 
+	}
+```
+> 建议学习使用线程池
+> ```
+> ExecutorService pool = Executors.newFixedThreadPool(30);
+> while (true) {
+> 	Socket client = server.accept();
+> 	pool.submit(new ClientService(client))); 
+> }
+> ```
+3. 设计客户与服务器之间的数据通信协议和命令格式
+	1. 数据格式: A,B
+		1. A : 为3位数字字符，代表命令；B：与命令相关的数据
+	2. 命令（参考）有：
+		1. 000： 无意义
+		2. 001： 用户注册命令，数据为： id, password  发送方为客户
+		3. 002: 用户登录命令，数据为： id, password 发送方为客户
+		4. 003： 用户退出命令，数据为: id 发送方为客户
+		5. 004： 查找用户命令，数据为: 查找模式 发送方为客户
+		5. 005： 发送消息命令，数据为: srcId, desId, msg, 发送方为客户
+		6. 101: 用户注册结果，数据为: id, 结果数据, 发送方为服务器
+			1. 结果数据： 成功或失败，如果是失败给出失败原因，比如id已被其它用户（包括）使用
+		7. 102: 用户登录结果，数据为: id, 结果数据 , 发送方为服务器
+			1. 结果数据： 成功或失败，如果是失败给出失败原因，比如id或passowrd错误
+		8. 103： 用户退出结果，数据为: id, 发送方为服务器
+		9. 104： 查找用户命令结果，数据为: id,id1,id2,....  发送方为服务器
+			1. id : 发送命令的用户id，
+			2. 后面是服务器中已注册的用户id列表
+		9. 105： 服务器群发命令，数据为: , msg，发送方为服务器
+		10. 106：服务器转发命令，数据为: srcId, desId, msg，发送方为服务器
+
+4. 用户之间的消息发送采用服务器转发方式实现
+	1. 用户A需要将消息msg发送给用户B时，需要向服务器发送数据： 005,A,b,msg
+	2. 服务器收到消息后将数据 A,b,msg 保存到消息队列中
+	3. 服务器发送消息的线程将 消息队列中的消息发送给
+	4. 实现原理
+		1. 服务器维护一个队列，队列元素中记录 “srcId, desId, msg”等数据。
+		2. 设计一个消息发送类 class sendMsgService implements Runnable
+			1. 该类 run()方法实现转发队列中的消息。
+		2. 服务器在调用accept()前，需要创建 sendMsgService线程。
+		2. 创建客户服务线程 ClientService 时，需要将这个队列引用传递进去。
+		3. sendMsgService线程与 sendMsgService线程在访问消息队列时采用消费/生产者模式实现操作同步。
+5. 所有用户信息都记录在内存中，且只记录已登录用户。 （选作：可以将数据保存到数据库）
+6. 系统的所用关键操作都记录并保存到日志文件中。 
+> 注意：所有数据均为字符串，id为用户标识且中间不能有空格或逗号，数据串中的逗号是数据部分的分隔字符，
+> 由于用户发送的消息中id为普通字符串（用户名），socket在发送消息时需要使用的是IP：Port，
+> 所以服务器需要维护一个id与socket之间的映射关系，并提供两者之间的相互转换功能。
+4. 该作业为大作业，在最后的实验课前完成，以上内容仅供参考，可以根据实际情况增加或调整相关内容。
+
+## SOA第七次作业
+5/8/2026  
+1. 自学http协议
+2. 使用 ServerSocket 编程实现显示浏览器http命令内容。
+3. 使用抓包软件查看http各种命令的数据格式
+3. 将上述内容撰写文档，使用md格式保存信息，文件名为“作业7.md”
+4. 修改前面作业中出现的错误或不足之处。
+5. 下周四上交作业
+
+代码参考
+```
+server = new ServerSocket(80);
+Socket client = server.accept();
+InputStream in = client.getInputStream();
+in = new BufferedInputStream(in);
+InputStreamReader reader = new InputStreamReader(in, "iso-8859-1");
+Scanner scanner = new Scanner(reader);
+	while (true) {
+		String line = scanner.nextLine();
+		if (line.isEmpty())
+			break;
+		System.out.println(line);
+		}
+
+```
+
 -------------------------
 广东工业大学计算机学院 cshao@gdut.edu.cn
 
