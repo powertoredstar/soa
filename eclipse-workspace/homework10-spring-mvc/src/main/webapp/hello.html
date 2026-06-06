@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>3123004163 - User Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        h1 { color: #333; }
+        h2 { color: #555; }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 10px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th { background-color: #4CAF50; color: white; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+        .info { color: #666; font-size: 14px; }
+        .btn {
+            padding: 8px 16px;
+            margin: 5px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            color: white;
+        }
+        .btn-green { background-color: #4CAF50; }
+        .btn-blue { background-color: #2196F3; }
+        .btn-red { background-color: #f44336; }
+        #result {
+            margin-top: 10px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>Spring MVC RESTful 测试页面</h1>
+    <p class="info">学号: 3123004163 | 姓名: 张逸壕 | 班级: 软件工程1班</p>
+
+    <h2>1. 查询用户1的信息</h2>
+    <button class="btn btn-green" onclick="getUser1()">获取用户1</button>
+    <div id="user1Result"></div>
+
+    <h2>2. 查询所有用户</h2>
+    <button class="btn btn-blue" onclick="getAllUsers()">获取所有用户</button>
+    <div id="allUsersResult"></div>
+
+    <h2>3. 新增用户</h2>
+    <input type="text" id="newUserName" placeholder="输入用户名">
+    <button class="btn btn-green" onclick="addUser()">添加</button>
+    <div id="addResult"></div>
+
+    <div id="result"></div>
+
+    <script src="test.js"></script>
+</body>
+</html>
