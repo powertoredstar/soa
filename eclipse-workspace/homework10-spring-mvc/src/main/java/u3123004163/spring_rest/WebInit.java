@@ -20,15 +20,23 @@ public class WebInit implements WebApplicationInitializer {
 
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
+        // 检查是否已经通过web.xml注册了dispatcher
+        if (servletContext.getServletRegistration("dispatcher") != null) {
+            return;
+        }
+        
         // 创建 Spring 应用上下文，注册配置类
         AnnotationConfigWebApplicationContext ctx = new AnnotationConfigWebApplicationContext();
         ctx.register(AppConfig.class);
+        ctx.setServletContext(servletContext);
 
         // 创建并注册 DispatcherServlet，拦截 /api/* 路径下的所有请求
         DispatcherServlet dispatcherServlet = new DispatcherServlet(ctx);
         ServletRegistration.Dynamic registration =
                 servletContext.addServlet("dispatcher", dispatcherServlet);
-        registration.setLoadOnStartup(1);
-        registration.addMapping("/api/*");
+        if (registration != null) {
+            registration.setLoadOnStartup(1);
+            registration.addMapping("/api/*");
+        }
     }
 }

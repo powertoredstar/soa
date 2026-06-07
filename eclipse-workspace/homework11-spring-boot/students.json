@@ -1,0 +1,19 @@
+[ {
+  "studentId" : "3123004163",
+  "name" : "张逸壕",
+  "gender" : "男",
+  "age" : 18,
+  "major" : "软件工程"
+}, {
+  "studentId" : "3123004001",
+  "name" : "李明",
+  "gender" : "男",
+  "age" : 21,
+  "major" : "计算机科学"
+}, {
+  "studentId" : "3123004166",
+  "name" : "李四",
+  "gender" : "男",
+  "age" : 21,
+  "major" : "软件工程"
+} ]
